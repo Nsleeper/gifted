@@ -1,0 +1,47 @@
+<script>
+  function placeGiftedButton(location) {
+    if (location == 1) {
+      $(document).ready(function() {
+        $(
+          '<button class="add-to-cart-btn-style" type="button">Gifted Button</button>'
+        ).appendTo("#above");
+      });
+    }
+    else if (location == 2) {
+      $(document).ready(function() {
+        $(
+          '<button class="add-to-cart-btn-style" type="button">Gifted Button</button>'
+        ).appendTo("#middle");
+      });
+    } else {
+      $(document).ready(function() {
+        $(
+          '<button class="add-to-cart-btn-style" type="button">Gifted Button</button>'
+        ).appendTo("#below");
+      });
+    }
+  }
+</script>
+<script>
+placegiftedbutton(1)
+</script>
+<script>
+    alert( 'Hello, world!' );
+  </script>
+<style>
+.add-to-cart-btn-style {
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+    width: 100%;
+}
+</style>
+<div class="productForm-buttons">
+  <div id="above"></div>
+  <div id="middle">
+    <button class="add-to-cart-btn-style">Add to Cart</button>
+  </div>
+  <div id="below">
+    <button class="add-to-cart-btn-style">Paypal</button>
+  </div>
+</div>
